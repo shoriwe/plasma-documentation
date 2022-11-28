@@ -1,7 +1,6 @@
 <script lang="ts">
 	// --
-	import { Viewer, Editor, type BytemdPlugin } from 'bytemd';
-	import breaks from '@bytemd/plugin-breaks';
+	import { Viewer, type BytemdPlugin } from 'bytemd';
 	import gfm from '@bytemd/plugin-gfm';
 	import frontmatter from '@bytemd/plugin-frontmatter';
 	import gemoji from '@bytemd/plugin-gemoji';
@@ -23,7 +22,6 @@
 
 	// Variables
 	const plugins: BytemdPlugin[] = [
-		breaks(),
 		frontmatter(),
 		gemoji(),
 		gfm(),
@@ -43,21 +41,12 @@
 	});
 </script>
 
-<div class="flex justify-center w-full h-full p-5">
-	<div class="viewer">
-		{#if contents}
-			<template>
-				<Viewer value={contents} {plugins} />
-			</template>
-		{:else}
-			<TextPlaceholder />
-		{/if}
-	</div>
+<div class="w-full h-full p-5">
+	{#if contents}
+		<template>
+			<Viewer value={contents} {plugins} />
+		</template>
+	{:else}
+		<TextPlaceholder />
+	{/if}
 </div>
-
-<style>
-	.viewer {
-		max-width: 800px;
-		height: 100%;
-	}
-</style>
