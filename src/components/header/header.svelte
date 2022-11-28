@@ -16,7 +16,6 @@
 		</NavBrand>
 		<NavHamburger on:click={toggle} />
 		<NavUl {hidden}>
-			<NavLi href="/playground">Playground</NavLi>
 			<NavLi href="/documentation">Documentation</NavLi>
 		</NavUl>
 	</Navbar>
