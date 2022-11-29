@@ -1,4 +1,10 @@
-# create-svelte
+# Documentation
+
+You can read the documentation in [https://shoriwe.github.io/plasma/](https://shoriwe.github.io/plasma/)
+
+This web page will fetch the files located in [https://github.com/shoriwe/plasma/docs](https://github.com/shoriwe/plasma/docs)
+
+## create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
