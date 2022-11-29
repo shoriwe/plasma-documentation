@@ -14,7 +14,7 @@
 
 	// CSS
 	import 'bytemd/dist/index.css';
-	import 'github-markdown-css';
+	import 'github-markdown-css/github-markdown-light.css';
 	import 'highlight.js/styles/vs.css';
 	import 'katex/dist/katex.css';
 	// -- Exports
